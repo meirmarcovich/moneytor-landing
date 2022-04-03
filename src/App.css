@@ -1,44 +1,89 @@
 .App {
   text-align: center;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 50vw;
+  margin: 0 auto;
+  font-family: lato,helvetica neue,helvetica,arial,sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+  height: 85px;
+  padding-bottom: 15px;
+  padding-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Mini-header {
+  color: #30388b;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box !important;
+  font-weight: 650;
+  line-height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Explanation {
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.App-link {
-  color: #4a5355;
-  font-size: 50px;
+.Mini-Explanation {
+  font-size: 18px;
+  line-height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.mcButtonContainer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box !important;
+}
+
+.mcButton {
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 14px;
+  background-color: #30388B;
+  box-shadow: none;
+  padding: 16px;
+  color: #FFFFFF;
+  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  box-sizing: border-box !important;
+  width: 155px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.Footer {
+  margin-top: 80px;
+  background: none center center / cover no-repeat rgb(48, 56, 139); 
+  position: relative; 
+  display: flex; 
+  flex-shrink: 0; 
+  justify-content: center; 
+  padding: 0px 0px 40px; 
+  border-top: 0px; 
+  border-bottom: 0px; 
+  box-sizing: border-box !important;
+  padding-top: 12px;
+}
+
+.Footer-Link {
+  width: 50px;
+  margin: 8px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .App {
+    width: 85vw;
   }
 }
