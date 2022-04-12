@@ -8,17 +8,20 @@ import youtube from './assets/youtube.png';
 import './App.css';
 
 function App() {
-  const [staticPage, setStaticPage] = useState(true);
+  const [staticPage, setStaticPage] = useState('');
 
   useEffect(() => {
     if (document.location.pathname === '/saltedge') {
-      setStaticPage(false);
+      setStaticPage('saltedge');
+    }
+    else {
+      setStaticPage('moneytor');
     }
   }, []);
 
   return (
     <>
-      {staticPage ?
+      {staticPage === 'moneytor' &&
         <div>
           <div className="App">
             <img src={logo} className="App-logo" alt="logo" />
@@ -70,7 +73,8 @@ function App() {
               <img src={youtube} className="Footer-Link" alt="logo" />
             </a>
           </div>
-        </div> : <div className="Saltedge">
+        </div>} 
+        {staticPage === 'saltedge' && <div className="Saltedge">
           <h3>.ניתן לסגור את החלון עכשיו</h3>
         </div>}
     </>
