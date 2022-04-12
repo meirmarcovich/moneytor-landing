@@ -82,6 +82,15 @@
   margin: 8px;
 }
 
+.Saltedge {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #fff;
+  text-align: center;
+  line-height: 1.4em;
+}
+
 @media only screen and (max-width: 1250px) {
   .App {
     width: 85vw;
